@@ -1,5 +1,10 @@
-VERSION=
+
+ifdef VERSION
+obj-m +=  tx2_uncore_pcie-${VERSION}.o
+else
 obj-m +=  tx2_uncore_pcie.o
+endif
+
 DIR=$(PWD)
 
 all:
