@@ -14,6 +14,10 @@ Module load/remove.
 
 To list events => perf list | grep pcie
 
+pci 1 to pci 14 maps to SOCKET 0 PCI RCs.
+pci 15 to pci 28 maps to SOCKET 1 PCI RCs.
+Use command pci -tv to know, which RC your device is connected to.
+
 NOTE:
 tx2_uncore_pcie.c is a copy of upstream version.
 tx2_uncore_pcie-v1.c is a copy of tx2_uncore_pcie.c with changes to port for
